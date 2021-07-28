@@ -15,11 +15,12 @@ public class GuestbookServiceTest {
 		ApplicationContext ac = new AnnotationConfigApplicationContext(ApplicationConfig.class); 
 		GuestbookService guestbookService = ac.getBean(GuestbookService.class);
 		
-		Guestbook guestbook = new Guestbook();
-		guestbook.setName("jiwon");
-		guestbook.setContent("반갑습니다. 여러분. 여러분이 재미있게 공부하고 계셨음 정말 좋겠네요^^22");
-		guestbook.setRegdate(new Date());
-		Guestbook result = guestbookService.addGuestbook(guestbook, "127.0.0.1");
+//		Guestbook guestbook = new Guestbook();
+//		guestbook.setName("jiwon");
+//		guestbook.setContent("반갑습니다. 여러분. 여러분이 재미있게 공부하고 계셨음 정말 좋겠네요^^22");
+//		guestbook.setRegdate(new Date());
+//		Guestbook result = guestbookService.addGuestbook(guestbook, "127.0.0.1");
+		int result = guestbookService.getCount();
 		System.out.println(result);
 		
 	}
